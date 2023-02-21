@@ -1,0 +1,92 @@
+
+{% extends 'base.html' %}
+<!-- {% extends 'store/main.html' %} -->
+{% load static %}
+{% block title %} | Contact {% endblock %}
+{% block content %}
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact</title>
+
+  <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+
+   <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+
+  <link rel="stylesheet" href="/static/css/contact.css">
+
+</head>
+<body>
+
+
+
+  <div class="container">
+    <h1 class="brand"><span>Luckystore</span> Contact</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Luckystore-Company</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> 44 Something st</li>
+          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+          <li><i class="fa fa-envelope"></i> test@raj.test</li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10527.505572188706!2d114.17196069261107!3d22.301770319687307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400edf4d4d36b%3A0x35c1ce833432319d!2z5bCW5rKZ5ZKA56uZ!5e0!3m2!1szh-TW!2stw!4v1676519293275!5m2!1szh-TW!2stw" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">Your message has been sent</div>
+
+        <form id="contactForm" action="{% url 'contact' %}" method="POST"
+        >
+
+        {% csrf_token %}
+          <p class="full">
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+
+          <p class="full">
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p class="full">
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone" required>
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message" required></textarea>
+          </p>
+
+          <p class="full">
+
+            <button  type="submit" value="Submit">Submit</button>
+            <script>
+              let form = document.getElementsByTagName("form")[0];
+              form.addEventListener("submit", (e) => {
+              e.preventDefault();
+              alert("Form Submitted!");
+              });
+            </script>
+
+
+          </p>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="static/js/contact.js"></script>
+</body>
+</html>
+
+
+{% endblock %}

@@ -1,0 +1,177 @@
+
+
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5a50d393cb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/about.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <!-- Header -->
+    {% comment %} <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="img/logo.png" alt="My Portfolio" id="logo" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="current">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </header> {% endcomment %}
+    <!-- Section A: Info -->
+    <section id="about-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">About Lucky-Store</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Let us tell you a little about what we do...</p>
+        <div class="about-info">
+          <img src="static/img/about/about1.jpg" alt="" class="bio-image">
+          <div class="bio bg-light">
+            <h4>Your Project Is In Safe Hands</h4>
+            <p>Welcome to Luckystore! We're the number one online store for all your needs. Our store has everything from clothes and shoes to electronics and home appliances.
+We know you want quality products at a great price. That's why we provide the best selection at competitive prices.
+At Luckystore, we understand that your time is valuable. That's why we make shopping quick and easy. Our website is designed to be intuitive and simple, so you can find what you need fast.
+We also offer excellent customer service. Our team is available to answer any questions or concerns you might have.
+With Luckystore, you never have to worry about getting a good deal. Shop with us today and find the perfect item at an unbeatable price.</p>
+          </div>
+          <div class="award-1">
+            <i class="fas fa-award fa-3x"></i>
+            <h3>commodity One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nobis.</p>
+          </div>
+          <div class="award-2">
+            <i class="fas fa-award fa-3x"></i>
+            <h3>commodity Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nobis.</p>
+          </div>
+          <div class="award-3">
+            <i class="fas fa-award fa-3x"></i>
+            <h3>commodity Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nobis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B: Progress Bars -->
+    <section id="about-b" class="bg-dark py-3">
+      <div class="container">
+        <h2 class="section-title">Hong Kong Online Store Ranking </h2>
+        <div class="bottom-line"></div>
+        <h4>luckstore store:</h4>
+        <div class="progress">
+          <div style="width:100%"></div>
+        </div>
+        <h4>A store:</h4>
+        <div class="progress">
+          <div style="width:90%"></div>
+        </div>
+        <h4>B store:</h4>
+        <div class="progress">
+          <div style="width:70%"></div>
+        </div>
+        <h4>C  store:</h4>
+        <div class="progress">
+          <div style="width:50%"></div>
+        </div>
+        <h4>D  store:</h4>
+        <div class="progress">
+          <div style="width:80%"></div>
+        </div>
+        <h4>E store:</h4>
+        <div class="progress">
+          <div style="width:20%"></div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Section C: logos   -->
+    <!-- !!!!!  Other photos can be used  -->
+
+    <section id="about-c" class="py-4 bg-light">
+      <div class="container">
+        <div class="about">
+          <img src="static/img/about/logo-envato.png" alt="">
+          <img src="static/img/about/logo-wordpress.png" alt="">
+          <img src="static/img/about/logo-woocommerce.png" alt="">
+          <img src="static/img/about/logo-magento.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Section D: Testimonials -->
+    <section id="about-d" class="py-4">
+      <div class="wrapper">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="bottom-line"></div>
+        <p class="lead text-center">Take a look at what us client say...</p>
+        <div class="testimonials">
+        <div>
+          <p style="width:200px; height:150; ">So happy with my purchase from LuckyStore! Their selection of products is awesome and the prices are unbeatable. Highly recommend!</p>
+        <div class="bottom-line-p"></div>
+          <ul>
+          <li><img src="static/img/about/person1.jpg" alt=""></li>
+          <li>Sam Smith, New York</li>
+        </ul>
+        </div>
+        <div>
+          <p style="width:200px; height:150; ">I recently bought from LuckyStore and I'm really satisfied with the speed of delivery and the quality of the product. Would shop there again!</p>
+          <div class="bottom-line-p"></div>  <ul>
+          <li><img src="static/img/about/person2.jpg" alt=""></li>
+          <li>Sara Williams, Michigan</li>
+        </ul>
+        </div>
+        <div>
+          <!-- <input name="" type="text" style="width:200px; height:200; "/> -->
+            <p style="width:200px; height:150; ">LuckyStore had exactly what I was looking for and the customer service was top-notch. Highly recommended!</p>
+          <div class="bottom-line-p"></div>
+        <ul>
+          <li><img src="static/img/about/person3.jpg" alt=""></li>
+          <li>Jill Johnson, London</li>
+        </ul>
+        </div>
+        <div>
+          <p style="width:200px; height:150; ">Great experience shopping at LuckyStore! They had a great selection of products, the prices were reasonable, and the delivery was fast. Will definitely shop here again!</p>
+          <div class="bottom-line-p"></div>
+        <ul>
+          <li><img src="static/img/about/person4.jpg" alt=""></li>
+          <li>Steve Thompson, Boston</li>
+        </ul>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    {% comment %} <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy 2020 All Rights Reserved</p>
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </footer> {% endcomment %}
+  </body>
+</html>
+
+{% endblock %}

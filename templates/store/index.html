@@ -1,0 +1,121 @@
+
+{% load static %}
+
+{% block content %}
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>luckystore (BS 4)</title>
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="static/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="static/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark">
+        <div class="container">
+            <div><a class="navbar-brand" href="#"><img id="logo" src="static/img/logo.svg"><strong>Lucky</strong>&nbsp;Store</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="store">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing">Pricing </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Order </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><select>
+                                <option value="12" selected="">English</option>
+                                <option value="13">繁體中文</option>
+                                <option value="14">简体中文</option>
+                            </select></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="promo">
+        <div class="jumbotron">
+            <h1>Fantastic Offer! </h1>
+            <p>We have a special treat to our new customers. Order now and get a big discount on your first order! </p>
+            <p><a class="btn btn-info btn-lg" role="button" href="#">Get 80% Off!</a></p>
+        </div>
+    </div>
+    <div class="container site-section" id="welcome">
+        <h1>Welcome to Lucky Store</h1>
+        <p>Lucky Store was founded in Hong Kong in 2023 with the mission of giving great commodities to the world. Our dedication and high quality products have won us numerous awards.</p>
+    </div>
+    <div class="dark-section">
+        <div class="container site-section" id="why">
+            <h1>Why Choose Us </h1>
+            <div class="row">
+                <div class="col-md-4 item"><i class="fa fa-birthday-cake"></i>
+                    <h2>Great Products</h2>
+                    <p>Our products are imported from countries around the world.</p>
+                </div>
+                <div class="col-md-4 item"><i class="fa fa-heart"></i>
+                    <h2>Healthy &amp; Organic</h2>
+                    <p>Only high quality commodities can enter our store. Our products compile to the highest quality standards.&nbsp; </p>
+                </div>
+                <div class="col-md-4 item"><i class="fa fa-shopping-basket"></i>
+                    <h2>Prompt Delivery</h2>
+                    <p>Commodities will be delivered within 24 hours after you place order of any value.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container site-section" id="gallery">
+        <h1>Gallery </h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card"><a data-lightbox="cakes" href="static/img/model.jpg" target="_blank"><img class="img-fluid" src="static/img/model.jpg"></a></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"><a data-lightbox="cakes" href="desert-2.jpg" target="_blank"><img class="img-fluid" src="static/img/cosmetic_products.png"></a></div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"><a data-lightbox="cakes" href="desert-3.jpg" target="_blank"><img class="img-fluid" src="static/img/japanese.jpg"></a></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 footer-navigation">
+                    <h3><a href="#">Lucky Store</a></h3>
+                    <p class="links"><a href="#">Products&nbsp;</a><strong> · </strong><a href="#">Pricing </a><strong> · </strong><a href="#">Order </a><strong> </strong></p>
+                    <p class="company-name">Lucky Store © 2023</p>
+                </div>
+                <div class="col-sm-6 col-md-4 footer-contacts">
+                    <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                        <p><span class="new-line-span">13 Fortune Street</span>Kowloon, Hong Kong</p>
+                    </div>
+                    <div><i class="fa fa-phone footer-contacts-icon"></i>
+                        <p class="footer-center-info email text-left"> +852 168 16888</p>
+                    </div>
+                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                        <p> <a href="#" target="_blank">support@luckystore.com</a></p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-4 footer-about">
+                    <h4>About the company</h4>
+                    <p> Lucky Store is the greatest in the whole universe.</p>
+                    <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
+
+{% endblock %}
